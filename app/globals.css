@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f4f1e9;
+  --paper-2: #ece7da;
+  --ink: #14140f;
+  --ink-soft: #4a4a40;
+  --line: #d6d0c0;
+  --lime: #c6f24e;
+  --lime-deep: #9bc91e;
+  --clay: #d4673e;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-lime: var(--lime);
+  --color-lime-deep: var(--lime-deep);
+  --color-clay: var(--clay);
+  --font-display: var(--font-archivo), system-ui, sans-serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-mono-space), ui-monospace, monospace;
+}
+
+* { -webkit-font-smoothing: antialiased; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+/* Paper grain texture via subtle repeating gradient */
+.paper-grain {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(20,20,15,0.04) 1px, transparent 0);
+  background-size: 4px 4px;
+}
+
+.ruled {
+  background-image: repeating-linear-gradient(
+    to bottom, transparent, transparent 31px, var(--line) 31px, var(--line) 32px
+  );
+}
+
+@keyframes countup {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-in { animation: countup 0.5s cubic-bezier(0.16,1,0.3,1) both; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+input[type="number"] { -moz-appearance: textfield; }
+
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }

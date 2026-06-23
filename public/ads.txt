@@ -1,0 +1,11 @@
+# ads.txt — Authorized Digital Sellers
+#
+# ⚠️ ACTION REQUIRED BEFORE ADSENSE WILL WORK:
+# Replace "pub-XXXXXXXXXXXXXXXX" below with your real AdSense publisher ID.
+# You'll find it in your AdSense account under Account → Settings → Account information
+# (it looks like pub-1234567890123456). Keep the rest of the line exactly as-is.
+#
+# After you sign up for AdSense and are approved, this file must be reachable at
+# https://YOUR_DOMAIN/ads.txt for Google to verify you.
+
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
