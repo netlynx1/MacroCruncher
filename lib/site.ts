@@ -10,7 +10,7 @@ export const SITE_URL = "https://macrocruncher.com";
 
 // TODO: replace with the email you want people to contact you at.
 // (e.g. hello@macrocruncher.com once you set up domain email.)
-export const CONTACT_EMAIL = "macrocruncher@example.com";
+export const CONTACT_EMAIL = "macrocruncher@gmail.com";
 
 export const SITE_NAME = "MacroCruncher";
 export const SITE_TAGLINE = "Free Macro Calculator | Calculate Calories & Macros";
