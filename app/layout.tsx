@@ -60,7 +60,7 @@ export default function RootLayout({
         {/* Google Search Console site verification */}
         <meta
           name="google-site-verification"
-          content="FkBGGwSfnhLjqFlhT391LdEQR7U5t2b_2WzwVGqXyno"
+          content="DZK48QT7ovZvh8trfUgpuVfBDfW2hYLgiAcRDlkXwuU"
         />
         {/* Third-party scripts load only when their env vars are set */}
         <AdSense />
