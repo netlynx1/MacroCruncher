@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Archivo, Inter, Space_Mono } from "next/font/google";
 import "./globals.css";
 import { AdSense, Analytics } from "@/components/ThirdParty";
+import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 import {
   SITE_URL,
   SITE_NAME,
@@ -70,6 +71,7 @@ export default function RootLayout({
         className={`${archivo.variable} ${inter.variable} ${spaceMono.variable}`}
       >
         {children}
+        <VercelAnalytics />
       </body>
     </html>
   );
